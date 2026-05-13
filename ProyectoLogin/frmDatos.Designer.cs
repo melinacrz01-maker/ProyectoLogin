@@ -105,7 +105,7 @@
             // 
             this.cmbModulo.FormattingEnabled = true;
             this.cmbModulo.Items.AddRange(new object[] {
-            "ADM ",
+            "ADM",
             "SIST",
             "COM",
             "VTA"});
@@ -159,6 +159,7 @@
             this.Name = "frmDatos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carga de Datos";
+            this.Load += new System.EventHandler(this.frmDatos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

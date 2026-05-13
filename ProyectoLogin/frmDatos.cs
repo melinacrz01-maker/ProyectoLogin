@@ -41,8 +41,9 @@ namespace ProyectoLogin
                 }
                 else
                 {
-                    MessageBox.Show("El usuario Jhon no tiene acceso al módulo seleccionado");
-                    maxIntentos++;
+                    MessageBox.Show("El usuario Jhon no tiene acceso al módulo seleccionado",
+                    "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                     maxIntentos++;
                 }
             }
             
@@ -56,7 +57,7 @@ namespace ProyectoLogin
                 }
                 else
                 {
-                    MessageBox.Show("El usuario Jhon no tiene acceso al módulo seleccionado");
+                    MessageBox.Show("El usuario Jhon no tiene acceso al módulo seleccionado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     maxIntentos++;
                 }
             }
@@ -98,6 +99,11 @@ namespace ProyectoLogin
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmDatos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
